@@ -42,11 +42,11 @@
 						<header class="major">
 							<h2>실시간 스트리밍</h2>
 						</header>
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/kl2YjHQusYI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe width="1260" height="715" src="https://www.youtube.com/embed/kl2YjHQusYI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						
 						<h1>채팅방</h1>
 						
-						<iframe width="560" height="315" src="https://www.youtube.com/live_chat?v=kl2YjHQusYI&embed_domain=nightbot.tv" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<div class="ibox-content"><h2>채팅방</h2><!-- ngIf: User.chatUrl --><iframe class="chat-frame ng-scope" src="https://www.youtube.com/live_chat?v=kl2YjHQusYI&amp;embed_domain=nightbot.tv" ng-if="User.chatUrl"></iframe><!-- end ngIf: User.chatUrl --><!-- ngIf: !User.chatUrl --></div>
 						
 						
 						<!-- Content -->
