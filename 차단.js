@@ -10,7 +10,7 @@ if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') !
 
 else {
 
-  alert("인터넷 익스플로러 브라우저가 아닙니다.");
+  
 
 }
 
