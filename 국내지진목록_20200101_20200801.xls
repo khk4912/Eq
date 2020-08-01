@@ -1,0 +1,146 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+<meta name="decorator" content="ajax" />
+<script type="text/javascript" src="/share/calendar/js/calendar.js"></script>
+<script type="text/javascript">
+//<!--
+	var cnt = 0;
+	function fn_popup_alone(img, sizeW, sizeH ){
+		var param = 'width='+sizeW+',height='+sizeH+',resize=yes,scrollbars=no,status=no';
+		remote = window.open(img,'',param);
+	}
+//-->
+
+function excel() {
+		document.frm.action = "excel_save.jsp";
+		document.frm.excel_data.value = document.getElementById("excel_body").outerHTML;
+		document.frm.submit();
+}
+</script>
+
+<style type="text/css">
+img.map_img{display: none;}
+img.map_img.map_img_view{position: absolute;display: inline-block;left: 0;width:525px;opacity:0.7;}
+img.map_view_icon{width:16px;}
+.table_develop td.tdpgt{border:none;}
+.table_develop td.tdpgt:hover{background:none;}
+.table_develop td a.pgt{font-weight:bold;font-size:13px;height: 19px;line-height: 19px;padding: 2px 5px 0px 6px;font-size: 0.9em;border-bottom: 2px solid #ccc8c8;border-right: 1px solid #c7c7c7;background-color: #d2d2d2;background: linear-gradient(#e8e7e7, #d0cfcf);background: -webkit-linear-gradient(#e8e7e7, #d0cfcf);background: -o-linear-gradient(#e8e7e7, #d0cfcf);background: -moz-linear-gradient(#e8e7e7, #d0cfcf);color: #17336e;}
+.table_develop td a.pgt.don {border-bottom: 2px solid #9097c7;border-right: 1px solid #757cab;background-color: #acb4e9;background: linear-gradient(#acb4e9, #3242b1);background: -webkit-linear-gradient(#acb4e9, #3242b1);background: -o-linear-gradient(#acb4e9, #3242b1);background: -moz-linear-gradient(#acb4e9, #3242b1);color:#dfdeea;}
+.table_develop td a.pgt:hover {border-bottom: 2px solid #9097c7;border-right: 1px solid #757cab;background-color: #acb4e9;background: linear-gradient(#acb4e9, #3242b1);background: -webkit-linear-gradient(#acb4e9, #3242b1);background: -o-linear-gradient(#acb4e9, #3242b1);background: -moz-linear-gradient(#acb4e9, #3242b1);color:#dfdeea;}
+
+.table_develop td.pdl4{padding-left:4px;}
+.table_develop td a.prev{margin-right:2px;padding-right:0 !important;background:none !important;}
+.table_develop td a.next{margin-left:2px;padding-right:0 !important;background:none !important;}
+.table_develop td a.first{margin-right:2px;padding-right:0 !important;background:none !important;}
+.table_develop td a.last{margin:0;padding-right:0 !important;background:none !important;}
+.table_develop tbody td a{display: inline-block;}
+
+</style>    
+</head>
+<body>
+
+<!-- content :Start -->
+
+	<table class="table_develop" id="excel_body"> 
+	<caption>국내 지진목록 검색결과</caption>
+	<colgroup> 
+	<col width="7%" /> 
+	<col width="15%" /> 
+	<col width="7%" /> 
+	<col width="7%" /> 
+	<col width="9%" /> 
+	<col width="9%" /> 
+	<col width="*%" /> 
+	<col width="10%" /> 
+<!-- 	<col width="28%" /> 
+	<col width="7%" /> 
+	<col width="7%" /> 
+	<col width="8%" />  -->
+	</colgroup> 
+	<thead> 
+	<tr>
+	<th scope="col" rowspan="2" class="top_line">번호</th> 
+	<th scope="col" rowspan="2" class="top_line">발생시각</th> 
+	<th scope="col" rowspan="2" class="top_line">규모</th> 
+	<th scope="col" rowspan="2" class="top_line">깊이(km)</th> 
+	<th scope="col" rowspan="2" class="top_line">위도</th> 
+	<th scope="col" rowspan="2" class="top_line">경도</th> 
+	<th scope="col" rowspan="2" class="top_line">위치</th> 
+	<!-- <th scope="col" class="top_line">파형자료</th>  -->
+	<!-- <th scope="col" rowspan="2" class="top_line">지도보기</th> -->
+	</tr> 
+	<tr> 
+<!-- 		<th scope="col">속도</th> 
+		<th scope="col">가속도</th>
+		<th scope="col">지도보기</th>  -->
+	</tr> 
+	</thead> 
+	<tbody> 
+	<tr><td>41</td><td>2020/08/01 02:58:47</td><td>2.0</td><td>17</td><td>38.65 N </td><td>127.16 E </td><td class="align_left">북한 강원 평강 북북서쪽 29km 지역</td></tr>
+<tr><td>40</td><td>2020/07/25 00:34:06</td><td>2.2</td><td>7</td><td>34.06 N </td><td>125.54 E </td><td class="align_left">전남 신안군 흑산도 남쪽 66km 해역</td></tr>
+<tr><td>39</td><td>2020/07/20 19:02:00</td><td>2.0</td><td>11</td><td>34.53 N </td><td>128.14 E </td><td class="align_left">경남 남해군 남남동쪽 41km 해역</td></tr>
+<tr><td>38</td><td>2020/07/15 15:20:47</td><td>2.4</td><td>-</td><td>34.88 N </td><td>124.68 E </td><td class="align_left">전남 신안군 흑산도 서북서쪽 77km 해역</td></tr>
+<tr><td>37</td><td>2020/07/11 22:38:55</td><td>2.7</td><td>-</td><td>37.88 N </td><td>129.58 E </td><td class="align_left">강원 동해시 북동쪽 57km 해역</td></tr>
+<tr><td>36</td><td>2020/07/07 14:08:23</td><td>3.3</td><td>12</td><td>37.19 N </td><td>125.55 E </td><td class="align_left">인천 옹진군 연평도 남남서쪽 54km 해역</td></tr>
+<tr><td>35</td><td>2020/07/03 13:59:31</td><td>2.3</td><td>6</td><td>37.18 N </td><td>128.71 E </td><td class="align_left">강원 영월군 동쪽 22km 지역</td></tr>
+<tr><td>34</td><td>2020/06/24 03:28:47</td><td>2.5</td><td>-</td><td>38.66 N </td><td>125.95 E </td><td class="align_left">북한 황해북도 사리원 북동쪽 24km 지역</td></tr>
+<tr><td>33</td><td>2020/06/23 19:58:05</td><td>2.1</td><td>6</td><td>37.86 N </td><td>126.90 E </td><td class="align_left">경기 파주시 북동쪽 15km 지역</td></tr>
+<tr><td>32</td><td>2020/06/21 09:49:52</td><td>2.3</td><td>9</td><td>38.47 N </td><td>128.52 E </td><td class="align_left">강원 고성군 북북동쪽 11km 해역</td></tr>
+<tr><td>31</td><td>2020/06/08 00:52:10</td><td>2.1</td><td>5</td><td>36.01 N </td><td>128.01 E </td><td class="align_left">경북 김천시 남남서쪽 17km 지역</td></tr>
+<tr><td>30</td><td>2020/06/04 02:21:01</td><td>2.5</td><td>6</td><td>38.75 N </td><td>125.69 E </td><td class="align_left">북한 황해북도 송림 동북동쪽 5km 지역</td></tr>
+<tr><td>29</td><td>2020/05/27 19:23:28</td><td>2.8</td><td>6</td><td>36.01 N </td><td>128.01 E </td><td class="align_left">경북 김천시 남남서쪽 17km 지역</td></tr>
+<tr><td>28</td><td>2020/05/22 21:18:32</td><td>2.1</td><td>11</td><td>37.67 N </td><td>125.00 E </td><td class="align_left">북한 황해남도 옹진 남서쪽 43km 해역</td></tr>
+<tr><td>27</td><td>2020/05/13 15:19:02</td><td>2.8</td><td>12</td><td>36.10 N </td><td>127.34 E </td><td class="align_left">전북 완주군 북동쪽 27km 지역</td></tr>
+<tr><td>26</td><td>2020/05/11 19:45:06</td><td>3.8</td><td>16</td><td>38.68 N </td><td>127.18 E </td><td class="align_left">북한 강원 평강 북북서쪽 32km 지역</td></tr>
+<tr><td>25</td><td>2020/05/09 12:27:08</td><td>2.2</td><td>8</td><td>38.87 N </td><td>126.22 E </td><td class="align_left">북한 평안남도 성천 남쪽 41km 지역</td></tr>
+<tr><td>24</td><td>2020/05/09 01:57:39</td><td>2.2</td><td>21</td><td>34.66 N </td><td>126.40 E </td><td class="align_left">전남 해남군 서북서쪽 21km 지역</td></tr>
+<tr><td>23</td><td>2020/05/07 02:07:31</td><td>2.1</td><td>17</td><td>34.77 N </td><td>124.68 E </td><td class="align_left">전남 신안군 흑산도 서쪽 73km 해역</td></tr>
+<tr><td>22</td><td>2020/05/05 06:44:29</td><td>2.4</td><td>-</td><td>38.47 N </td><td>126.16 E </td><td class="align_left">북한 황해북도 평산 북서쪽 26km 지역</td></tr>
+<tr><td>21</td><td>2020/05/03 22:07:14</td><td>3.1</td><td>21</td><td>34.66 N </td><td>126.40 E </td><td class="align_left">전남 해남군 서북서쪽 21km 지역</td></tr>
+<tr><td>20</td><td>2020/05/02 02:57:02</td><td>2.3</td><td>21</td><td>34.66 N </td><td>126.40 E </td><td class="align_left">전남 해남군 서북서쪽 21km 지역</td></tr>
+<tr><td>19</td><td>2020/04/30 07:13:13</td><td>2.4</td><td>21</td><td>34.66 N </td><td>126.40 E </td><td class="align_left">전남 해남군 서북서쪽 21km 지역</td></tr>
+<tr><td>18</td><td>2020/04/29 15:10:47</td><td>2.4</td><td>-</td><td>39.39 N </td><td>126.13 E </td><td class="align_left">북한 평안남도 성천 북북서쪽 18km 지역</td></tr>
+<tr><td>17</td><td>2020/04/28 12:52:01</td><td>2.1</td><td>22</td><td>34.66 N </td><td>126.41 E </td><td class="align_left">전남 해남군 서북서쪽 20km 지역</td></tr>
+<tr><td>16</td><td>2020/04/28 12:06:53</td><td>2.4</td><td>10</td><td>36.16 N </td><td>127.43 E </td><td class="align_left">충남 금산군 북서쪽 8km 지역</td></tr>
+<tr><td>15</td><td>2020/04/27 11:07:10</td><td>2.8</td><td>6</td><td>35.80 N </td><td>127.53 E </td><td class="align_left">전북 장수군 북쪽 17km 지역</td></tr>
+<tr><td>14</td><td>2020/04/24 02:07:22</td><td>2.3</td><td>15</td><td>35.30 N </td><td>125.54 E </td><td class="align_left">전남 신안군 흑산도 북쪽 73km 해역</td></tr>
+<tr><td>13</td><td>2020/04/22 20:54:26</td><td>2.1</td><td>9</td><td>38.11 N </td><td>130.01 E </td><td class="align_left">강원 동해시 북동쪽 102km 해역</td></tr>
+<tr><td>12</td><td>2020/04/18 07:36:28</td><td>2.3</td><td>14</td><td>37.58 N </td><td>126.14 E </td><td class="align_left">인천 강화군 서남서쪽 36km 해역</td></tr>
+<tr><td>11</td><td>2020/04/03 19:44:35</td><td>2.2</td><td>-</td><td>38.75 N </td><td>125.72 E </td><td class="align_left">북한 황해북도 송림 동북동쪽 8km 지역</td></tr>
+<tr><td>10</td><td>2020/03/20 16:02:45</td><td>2.7</td><td>9</td><td>35.39 N </td><td>128.01 E </td><td class="align_left">경남 산청군 동남동쪽 13km 지역</td></tr>
+<tr><td>9</td><td>2020/03/10 01:16:33</td><td>2.0</td><td>12</td><td>35.44 N </td><td>125.54 E </td><td class="align_left">전북 군산시 어청도 남남서쪽 85km 해역</td></tr>
+<tr><td>8</td><td>2020/02/29 22:03:50</td><td>2.4</td><td>8</td><td>38.45 N </td><td>126.17 E </td><td class="align_left">북한 황해북도 평산 북서쪽 24km 지역</td></tr>
+<tr><td>7</td><td>2020/02/29 22:02:19</td><td>2.7</td><td>8</td><td>38.46 N </td><td>126.17 E </td><td class="align_left">북한 황해북도 평산 북서쪽 24km 지역</td></tr>
+<tr><td>6</td><td>2020/02/16 20:03:35</td><td>2.7</td><td>19</td><td>36.26 N </td><td>130.49 E </td><td class="align_left">경북 영덕군 동쪽 102km 해역</td></tr>
+<tr><td>5</td><td>2020/02/09 14:41:26</td><td>2.4</td><td>9</td><td>35.77 N </td><td>129.03 E </td><td class="align_left">경북 경주시 서남서쪽 18km 지역</td></tr>
+<tr><td>4</td><td>2020/01/30 00:52:52</td><td>3.2</td><td>21</td><td>36.59 N </td><td>128.12 E </td><td class="align_left">경북 상주시 북쪽 20km 지역</td></tr>
+<tr><td>3</td><td>2020/01/29 09:33:47</td><td>2.5</td><td>-</td><td>41.29 N </td><td>129.11 E </td><td class="align_left">북한 함경북도 길주 북북서쪽 41km 지역</td></tr>
+<tr><td>2</td><td>2020/01/15 22:46:11</td><td>2.1</td><td>8</td><td>37.11 N </td><td>128.29 E </td><td class="align_left">충북 제천시 동남동쪽 9km 지역</td></tr>
+<tr><td>1</td><td>2020/01/08 06:03:00</td><td>2.0</td><td>17</td><td>35.91 N </td><td>128.38 E </td><td class="align_left">경북 성주군 동쪽 9km 지역</td></tr>
+
+	</tbody> 
+	</table> 
+<!-- content :End -->
+</body>
+</html>
+
+
