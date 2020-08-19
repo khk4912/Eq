@@ -1,3 +1,23 @@
+!-- 접속 OS 확인 -->
+<script type="text/javascript" language="JavaScript">
+
+           var mobileKeyWords = new Array('BlackBerry', 'Android', 'Windows CE', 'Windows CE;', 'LG', 'MOT', 'SAMSUNG', 'SonyEricsson', 'Mobile', 'Symbian', 'Opera Mobi', 'Opera Mini', 'IEmobile');
+
+           for (var word in mobileKeyWords){
+
+               if (navigator.userAgent.match(mobileKeyWords[word]) != null){
+
+                         window.location.href = "http://jap-kor-earthquake.github.io/Eq/P-Mobile";
+
+                   break;
+
+                     }
+
+           }
+
+</script>
+
+
 <link rel="icon" type="https://jap-kor-earthquake.github.io/Eq/ico.ico" sizes="192x192"  href="https://jap-kor-earthquake.github.io/Eq/ico.ico">
 
 <!DOCTYPE HTML>
