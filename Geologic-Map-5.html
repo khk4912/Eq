@@ -4,7 +4,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
-		<title>지질정보서비스시스템</title>
+		<title>지질정보서비스시스템 5만 지질도</title>
 		<link rel="stylesheet" type="text/css" href="/css/common.css">
 		<link rel="stylesheet" type="text/css" href="/css/map/map.css">
 		<link rel="stylesheet" type="text/css" href="/css/map/ol.css">
@@ -38,14 +38,14 @@
 	    </script> 
 		
  			<!-- 3.18.2 -->
-		<script src="/js/map/openlayers/v3.20.1-dist/ol-debug.js"></script>
+		<script src="https://mgeo.kigam.re.kr/js/map/openlayers/v3.20.1-dist/ol-debug.js"></script>
 
-		<script src="/js/map/ol3_drag.js"></script>
-		<script src="/js/map/jsShare.js"></script>
+		<script src="https://mgeo.kigam.re.kr/js/map/ol3_drag.js"></script>
+		<script src="https://mgeo.kigam.re.kr/js/map/jsShare.js"></script>
 		
 		
 		<!-- input type range js START -->
-		<script src="/js/map/rangeslider.js"></script>
+		<script src="https://mgeo.kigam.re.kr/js/map/rangeslider.js"></script>
 		<!-- input type range js END -->
 		
 		<script>
@@ -76,8 +76,8 @@
 		
 	    <!-- 바로E맵 & Measure Script START-->  
     	<script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
-	    <script src="/js/map/emap/baro_emap.js"></script>
-	    <script src="/js/map/emap/measure/measure.js"></script>
+	    <script src="https://mgeo.kigam.re.kr/js/map/emap/baro_emap.js"></script>
+	    <script src="https://mgeo.kigam.re.kr/js/map/emap/measure/measure.js"></script>
 		
 	    <!-- 바로E맵 & Measure Script END -->  
 	    	    
@@ -89,18 +89,18 @@
 
 
 				
-		<script src="/js/map/shpUtil/preprocess.js"></script>
-		<script src="/js/map/shpUtil/preview.js"></script>
-		<script src="/js/lib/jszip.js"></script>
-		<script src="/js/lib/jszip-utils.js"></script>
+		<script src="https://mgeo.kigam.re.kr/js/map/shpUtil/preprocess.js"></script>
+		<script src="https://mgeo.kigam.re.kr/js/map/shpUtil/preview.js"></script>
+		<script src="https://mgeo.kigam.re.kr/js/lib/jszip.js"></script>
+		<script src="https://mgeo.kigam.re.kr/js/lib/jszip-utils.js"></script>
 		<!-- /파일중첩용 shp추출 관련 JS -->
 		
 		
 
-		<script src="/js/map/google-function.js"></script>
+		<script src="https://mgeo.kigam.re.kr/js/map/google-function.js"></script>
 		
 		<!-- overlay popup START -->
-		<script src="/js/map/ol-popup.js"></script>
+		<script src="https://mgeo.kigam.re.kr/js/map/ol-popup.js"></script>
 		<!-- overlay popup END -->
 	</head>
 	<body>
@@ -342,29 +342,29 @@ $(function(){
 		<div id="mapWrapDiv" class="wrapMap" >
 			<div id="map1Wrap">
 				<div id="map1" class="map"></div>
-				<img id="cross1" src="/images/map/symbol/crosshair.png" alt="지도중앙 표시 이미지">
+				<img id="cross1" src="https://mgeo.kigam.re.kr/images/map/symbol/crosshair.png" alt="지도중앙 표시 이미지">
 			</div>
 			<div id="map2Wrap">
 				<div id="map2" class="map"></div>
-				<img id="cross2" src="/images/map/symbol/crosshair.png" alt="지도중앙 표시 이미지">
+				<img id="cross2" src="https://mgeo.kigam.re.kr/images/map/symbol/crosshair.png" alt="지도중앙 표시 이미지">
 			</div>
 		</div>
 	</div>
 	<!--상단 right Menu -->
 	<div class="ctlwrap">
 		<ul class="icon">
-			<li><a href="javascript:void(0);" class="btn_distance btn_shape"><img src="/images/map/icon/tool/ja_xs.png"  title="거리"/></a></li>
-			<li><a href="javascript:void(0);" class="btn_area btn_shape"><img src="/images/map/icon/tool/area_xs.png" title="면적"/></a></li>
-			<li><a href="javascript:void(0)" class="btn_openL btn_shape"  title="메뉴 보이기/숨기기" ><img src="/images/map/icon/tool/menu_xs.png" alt="메뉴" /></a></li>
+			<li><a href="javascript:void(0);" class="btn_distance btn_shape"><img src="https://mgeo.kigam.re.kr/images/map/icon/tool/ja_xs.png"  title="거리"/></a></li>
+			<li><a href="javascript:void(0);" class="btn_area btn_shape"><img src="https://mgeo.kigam.re.kr/images/map/icon/tool/area_xs.png" title="면적"/></a></li>
+			<li><a href="javascript:void(0)" class="btn_openL btn_shape"  title="메뉴 보이기/숨기기" ><img src="https://mgeo.kigam.re.kr/images/map/icon/tool/menu_xs.png" alt="메뉴" /></a></li>
 		</ul>
 	</div>
 	<!--// end right Menu -->
 	<!--left Menu end-->
     <div class="left_btn">
 		<ul>
-			<li><a class="btn_plus" href="javascript:controlZoom('plus');"><img src="/images/map/icon/tool/plus_xs.png" alt="확대보기" /></a></li>
-			<li><a class="btn_minus" href="javascript:controlZoom('minus');"><img src="/images/map/icon/tool/minus_xs.png" alt="축소보기" /></a></li>
-			<li><a class="btn_info" href="javascript:void(0);"><img src="/images/map/icon/tool/info_xs.png" alt="속성 정보보기" /></a></li>
+			<li><a class="btn_plus" href="javascript:controlZoom('plus');"><img src="https://mgeo.kigam.re.kr/images/map/icon/tool/plus_xs.png" alt="확대보기" /></a></li>
+			<li><a class="btn_minus" href="javascript:controlZoom('minus');"><img src="https://mgeo.kigam.re.kr/images/map/icon/tool/minus_xs.png" alt="축소보기" /></a></li>
+			<li><a class="btn_info" href="javascript:void(0);"><img src="https://mgeo.kigam.re.kr/images/map/icon/tool/info_xs.png" alt="속성 정보보기" /></a></li>
 			
 			<li><a class="btn_txt" href="javascript:void(0);"><span>안내</span></a></li>
 			
@@ -376,7 +376,7 @@ $(function(){
 	<!--알림 레이어  내용-->
 	<div  class="layer-style01 alert_layer" style="display:none">	
 		<h3>알림</h3>
-		<a href="javascript:void(0);" class="close"><img src="/images/map/tooltip_closew.png" alt="close" /></a>						
+		<a href="javascript:void(0);" class="close"><img src="https://mgeo.kigam.re.kr/images/map/tooltip_closew.png" alt="close" /></a>						
 		<div class="cont">
 			<p>도형을 선택해주세요. 도형을 선택해주세요.</p>
 		</div>
@@ -386,7 +386,7 @@ $(function(){
 	<!--이용안내 레이어 팝업 내용-->
 	<div  class="layer-style01 layerPop">	
 		<h3>1/5만 축척 지질도 이용 시 참고사항</h3>
-		<a href="javascript:void(0);" class="close"><img src="/images/map/tooltip_close.png" alt="close" /></a>						
+		<a href="javascript:void(0);" class="close"><img src="https://mgeo.kigam.re.kr/images/map/tooltip_close.png" alt="close" /></a>						
 		<div class="cont">
 			<p>MGEO 지질정보시스템을 이용해 주셔서 감사합니다.</p>
 			<p>1/5만 축척 지질도(원도)는 조사 시점의 지질조사자 의견을 전적으로 반영하여 출간된 것입니다.</p>
@@ -445,7 +445,7 @@ $(function(){
 	<div class="menuLayer">
 		<div class="layerTit">
 			<h2> 메뉴</h2>
-			<a href="#" class="boxclose1"><img src="/images/map/tooltip_closew.png" alt="close" /></a>
+			<a href="#" class="boxclose1"><img src="https://mgeo.kigam.re.kr/images/map/tooltip_closew.png" alt="close" /></a>
 		</div>
 		<ul class="menus">
 			<li id="dadFile"><a href="javascript:void(0);">파일중첩(shp,gpx) <span class="ic icon icImg1"></span></a></li>
@@ -472,7 +472,7 @@ $(function(){
 	<div class="memoLayer">
 		<div class="layerTit">
 			<h2> 메모</h2>
-			<a href="#" class="btn_return"><img src="/images/map/icon/btn_return.png" alt="return" /></a>
+			<a href="#" class="btn_return"><img src="https://mgeo.kigam.re.kr/images/map/icon/btn_return.png" alt="return" /></a>
 		</div>
 		<ul class="menus">
 			<li id="memo_list"><a href="javascript:void(0)">목록 <span class="ic icon icList"></span></a></li>
@@ -506,35 +506,35 @@ $(function(){
 			
 				<div class="symbolbox">
 					<div class="symbol symbol_line">
-						<img src="/common/SYMBOL/file_down.do?savFile=20171103091221774.png" class="menu_memo_input_object draw_memo_object" tabindex="1" title="위치표시1" style="display: none;">
+						<img src="https://mgeo.kigam.re.kr/common/SYMBOL/file_down.do?savFile=20171103091221774.png" class="menu_memo_input_object draw_memo_object" tabindex="1" title="위치표시1" style="display: none;">
 						<br>위치표시1
 					</div>
 				</div>
 			
 				<div class="symbolbox">
 					<div class="symbol symbol_line">
-						<img src="/common/SYMBOL/file_down.do?savFile=20171103091438731.png" class="menu_memo_input_object draw_memo_object" tabindex="13" title="위치표시2" style="display: none;">
+						<img src="https://mgeo.kigam.re.kr/common/SYMBOL/file_down.do?savFile=20171103091438731.png" class="menu_memo_input_object draw_memo_object" tabindex="13" title="위치표시2" style="display: none;">
 						<br>위치표시2
 					</div>
 				</div>
 			
 				<div class="symbolbox">
 					<div class="symbol symbol_line">
-						<img src="/common/SYMBOL/file_down.do?savFile=20171031063150539.png" class="menu_memo_input_object draw_memo_object" tabindex="4" title="위치표시3" style="display: none;">
+						<img src="https://mgeo.kigam.re.kr/common/SYMBOL/file_down.do?savFile=20171031063150539.png" class="menu_memo_input_object draw_memo_object" tabindex="4" title="위치표시3" style="display: none;">
 						<br>위치표시3
 					</div>
 				</div>
 			
 				<div class="symbolbox">
 					<div class="symbol symbol_line">
-						<img src="/common/SYMBOL/file_down.do?savFile=20171101111342339.png" class="menu_memo_input_object draw_memo_object" tabindex="6" title="광산" style="display: none;">
+						<img src="https://mgeo.kigam.re.kr/common/SYMBOL/file_down.do?savFile=20171101111342339.png" class="menu_memo_input_object draw_memo_object" tabindex="6" title="광산" style="display: none;">
 						<br>광산
 					</div>
 				</div>
 			
 				<div class="symbolbox">
 					<div class="symbol symbol_line">
-						<img src="/common/SYMBOL/file_down.do?savFile=20171101111545423.png" class="menu_memo_input_object draw_memo_object" tabindex="7" title="시추위치" style="display: none;">
+						<img src="https://mgeo.kigam.re.kr/common/SYMBOL/file_down.do?savFile=20171101111545423.png" class="menu_memo_input_object draw_memo_object" tabindex="7" title="시추위치" style="display: none;">
 						<br>시추위치
 					</div>
 				</div>
@@ -642,7 +642,7 @@ $(function(){
 	<!--메모목록 레이어 -->
 	<div class="layer-style02 memo_list_div" style="display:none">
 		<h3>내가등록한 메모목록
-			<a href="#" class="close"><img src="/images/map/tooltip_closew.png" alt="close" /></a>
+			<a href="#" class="close"><img src="https://mgeo.kigam.re.kr/images/map/tooltip_closew.png" alt="close" /></a>
 			<a href="javascript:void(0)" class="ui-btn-back">BACK</a>
 		</h3>
 		<!-- 2019 09 18 추가 / 다중 삭제를 위함  -->
@@ -663,7 +663,7 @@ $(function(){
 	<!--선택된 메모 목록 레이어 -->
 	<div class="layer-style02 memo_select_div" style="display:none">
 		<h3>선택된 메모목록
-			<a href="#" class="close"><img src="/images/map/tooltip_closew.png" alt="close" /></a>
+			<a href="#" class="close"><img src="https://mgeo.kigam.re.kr/images/map/tooltip_closew.png" alt="close" /></a>
 			<a href="javascript:void(0)" class="ui-btn-back">BACK</a>
 		</h3>
 		<div class="overflow_scroll">
@@ -673,7 +673,7 @@ $(function(){
 	</div>
 
 	<!--메모 보기 및 수정 레이어 -->
-	<form id="memoActionForm" name="memoActionForm" method="post" action="/map/updateMemo.do" enctype="multipart/form-data">
+	<form id="memoActionForm" name="memoActionForm" method="post" action="https://mgeo.kigam.re.kr/map/updateMemo.do" enctype="multipart/form-data">
 	<div class="layer-style02 memo_view_div" id="memo_view_div" style="display:none">
 <!-- 		<h3>메모보기 -->
 
@@ -702,7 +702,7 @@ $(function(){
 	<!--//끝-->	            
 
 	<!--메모등록 레이어 -->
-	<form id="memoform" name="memoform" method="post" action="/map/insertMemo.do" enctype="multipart/form-data">
+	<form id="memoform" name="memoform" method="post" action="https://mgeo.kigam.re.kr/map/insertMemo.do" enctype="multipart/form-data">
 		<div  class="layer-style02 memo_write_div" style="display:none">
 						
 		</div>
@@ -712,7 +712,7 @@ $(function(){
 	<!--공간객체 검색 레이어 -->
 	<div class="layer-style02 searchGeo_div" style="display:none">
 		<h3>공간객체검색
-			<a href="#" class="close"><img src="/images/map/tooltip_closew.png" alt="close" /></a>
+			<a href="#" class="close"><img src="https://mgeo.kigam.re.kr/images/map/tooltip_closew.png" alt="close" /></a>
 			<a href="javascript:void(0)" class="ui-btn-back">BACK</a>
 		</h3>
 		<ul class="style01">
@@ -744,7 +744,7 @@ $(function(){
 	<!--좌표이동  레이어 -->
 	<div class="layer-style02 moveto_div" style="display:none">
 		<h3>좌표이동
-			<a href="#" class="close"><img src="/images/map/tooltip_closew.png" alt="close" /></a>
+			<a href="#" class="close"><img src="https://mgeo.kigam.re.kr/images/map/tooltip_closew.png" alt="close" /></a>
 			<a href="javascript:void(0)" class="ui-btn-back">BACK</a>
 		</h3>
 		<ul class="style01">
@@ -767,7 +767,7 @@ $(function(){
 	<div class="data_exportLayer">
 		<div class="layerTit">
 			<h2> 자료추출</h2>
-			<a href="#" class="btn_return"><img src="/images/map/icon/btn_return.png" alt="close" /></a>
+			<a href="#" class="btn_return"><img src="https://mgeo.kigam.re.kr/images/map/icon/btn_return.png" alt="close" /></a>
 		</div>
 		<ul class="menus">
 			<li id="expShp"><a href="javascript:void(0);">shp추출 <span class="ic icon icShp"></span></a></li>
@@ -781,7 +781,7 @@ $(function(){
 		<div class="layer-style02 error_div" id="reporterrorpage" style="display:none">			
 				<input type="hidden" id="reporterror_first" value="">
 				<h3>속성오류신고
-					<a href="#" class="close"><img src="/images/map/tooltip_closew.png" alt="close" /></a>
+					<a href="#" class="close"><img src="https://mgeo.kigam.re.kr/images/map/tooltip_closew.png" alt="close" /></a>
 					<a href="#" class="ui-btn-back">BACK</a>
 				</h3>
 				<ul class="style01">
@@ -808,7 +808,7 @@ $(function(){
 	<div class="layer-style02 legend_div" id="legend_view" style="display:none">
 		<h3>
 			<span>지질범례</span>
-			<a href="javascript:void(0)" class="close"><img src="/images/map/tooltip_closew.png" alt="close" /></a>
+			<a href="javascript:void(0)" class="close"><img src="https://mgeo.kigam.re.kr/images/map/tooltip_closew.png" alt="close" /></a>
 			<a href="javascript:void(0)" class="ui-btn-back">BACK</a>
 		</h3>
 		<div class="style02">
@@ -838,7 +838,7 @@ $(function(){
 <!--지층 정보 레이어-->
 	<div  class="layer-style02 description_layer" id="description" style="display:none">	
 		<h3>지층</h3>
-		<a href="#" class="close"><img src="/images/map/tooltip_closew.png" alt="close" /></a>
+		<a href="#" class="close"><img src="https://mgeo.kigam.re.kr/images/map/tooltip_closew.png" alt="close" /></a>
 		<a href="#" class="ui-btn-back">BACK</a>						
 		<div class="style01">
 			<div class="overflow_scroll">
@@ -864,7 +864,7 @@ $(function(){
 	<div id="footerWrap">
 		<div class="ui_footer">
 			<ul>
-				<li><a href="/sub01/page01.do" id="btn_home" class="btn_w icon_xs01">홈</a></li>
+				<li><a href="https://mgeo.kigam.re.kr/sub01/page01.do" id="btn_home" class="btn_w icon_xs01">홈</a></li>
 				<li><a href="" id="btn_address" class="btn_w icon_xs02">주소</a></li>
 				<li><a href="javascript:locate();" id="btn_locate" class="btn_w icon_xs03">현위치</a></li>
 				<li><a href="" id="btn_layer" class="btn_w icon_xs04">레이어</a></li>				
@@ -876,7 +876,7 @@ $(function(){
 	<div class="addSearch">
 		<div class="title">
 			<h2>주소검색</h2>
-			<a href="javascript:addressLayer.getSource().clear();" class="boxclose2"><img src="/images/map/tooltip_closew.png" alt="close" /></a>
+			<a href="javascript:addressLayer.getSource().clear();" class="boxclose2"><img src="https://mgeo.kigam.re.kr/images/map/tooltip_closew.png" alt="close" /></a>
 			<a href="javascript:void(0)" class="ui-btn-back">BACK</a>
 		</div>
 		<div class="address">
@@ -921,7 +921,7 @@ $(function(){
 	<div class="mapLayer">
 		<div class="title">
 			<h2> 지도레이어 </h2>
-			<a href="javascript:void(0)" class="boxclose3"><img src="/images/map/tooltip_closew.png" alt="close" /></a>
+			<a href="javascript:void(0)" class="boxclose3"><img src="https://mgeo.kigam.re.kr/images/map/tooltip_closew.png" alt="close" /></a>
 			<a href="javascript:void(0)" class="ui-btn-back">BACK</a>
 		</div>
 		<div id="accordion" class="accordion-container">
