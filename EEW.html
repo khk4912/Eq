@@ -11,7 +11,7 @@
 <script>
 var myLoc = new Object();
 var tide = 0;
-var binPath = "/pews/data/";
+var binPath = "https://www.weather.go.kr/pews/data/";
 var maxFavLen = 3;
 var startDelay = 10000;
 var eqkHist;
@@ -164,7 +164,7 @@ function fn_selOnload(num){
 }
 
 function fn_necis(){
-	window.open("/pews/man/uc.html", "알림", "width=500, height=600");
+	window.open("https://www.weather.go.kr/pews/man/uc.html", "알림", "width=500, height=600");
 }
 
 function fn_fav0Chg(num){
@@ -791,7 +791,7 @@ function fn_top(){
     </div>    
   </div>
   <div class="content">
-	<iframe id="iframe" class="iframe" src="/pews/pews.html"></iframe>
+	<iframe id="iframe" class="iframe" src="https://www.weather.go.kr/pews/pews.html"></iframe>
   </div>
   </div>
 </body>
